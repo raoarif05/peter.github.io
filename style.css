@@ -8,7 +8,7 @@
 :root{
     --primary-clr: #d6d6d6;
     --secondary-clr: #fff;
-    --sec-bg-clr: #2c2c2c;
+    --sec-bg-clr: red;
     --links-clr: #6b6b6b;
     --border--clr: 1px solid red;
 }
