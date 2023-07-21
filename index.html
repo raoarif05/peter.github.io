@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fmovies</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FONT FAMILIES LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Heebo:wght@200&family=Kanit:wght@300&family=Merriweather+Sans&family=Oleo+Script&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWSOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="header"> <!-- HEADER START -->
+            
+            <div class="logo">
+                fmovies
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li class="genre"><a href="#">genre</a>
+                        <div class="genre-drop-down-menu">
+                            <a href="">action</a>
+                            <a href="">Adventure</a>
+                            <a href="">action & adventure</a>
+                            <a href="">animation</a>
+                            <a href="">biography</a>
+                            <a href="">crime</a>
+                            <a href="">comedy</a>
+                            <a href="">drama</a>
+                            <a href="">family</a>
+                            <a href="">history</a>
+                            <a href="">horror</a>
+                            <a href="">kids</a>
+                            <a href="">mystery</a>
+                            <a href="">news</a>
+                            <a href="">reality</a>
+                            <a href="">romantic</a>
+                            <a href="">sci-fi & fantasy</a>
+                            <a href="">science fiction</a>
+                            <a href="">thriller</a>
+                            <a href="">tV movies</a>
+                            <a href=""> war</a>
+                        </div>
+                    </li>
+                    <li><a class="contry" href="#">country</a>
+                        <div class="cntry-drop-down-menu">
+                            <a href="">australia</a>
+                            <a href="">austria</a>
+                            <a href="">belgium</a>
+                            <a href="">brazil</a>
+                            <a href="">canada</a>
+                            <a href="">china</a>
+                            <a href="">denmark</a>
+                            <a href="">france</a>
+                            <a href="">geramny</a>
+                            <a href="">hong kong </a>
+                            <a href="">inda</a>
+                            <a href="">japan</a>
+                            <a href="">pakistan</a>
+                            <a href="">russia </a>
+                            <a href="">south africa</a>
+                            <a href="">south korea</a>
+                            <a href="">apain</a>
+                            <a href="">thailand</a>
+                            <a href="">united kingdom</a>
+                            <a href="">united states of America</a>
+                        </div>
+                    </li>
+                    <li><a href="#">series</a></li>
+                    <li><a href="#">comics</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-box">
+                <form action="#">
+                    <input type="text" placeholder="Search Here" autocomplete="on" id="Search" name="Search">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="filter">
+                <button id="fltrbtn">
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+            </div>
+
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>      <!-- HEADER CLOSED -->    
+           
+        <div class="fltr-cntnt" id="fltrcntnt">
+            
+            <div class="fltr-cntnt-itm-cntnr">
+                <div class="typ-title">
+                    type:
+                </div>
+                <div class="type">
+                    <div class="radio-btn">
+                        <input type="radio" name="type" value="all" id="all">
+                    <label for="all">all</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="type" value="movie" id="movie">
+                    <label for="movie">movie</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="type" value="tv-show" id="tv-show">
+                    <label for="tv-show">tV show</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fltr-cntnt-itm-cntnr">
+                <div class="qlty-title">
+                    quality
+                </div>
+                <div class="qlty">
+                    <div class="radio-btn">
+                        <input type="radio" name="qlty" value="qlty-all" id="qlty-all">
+                    <label for="qlty-all">all</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="qlty" value="hd" id="hd">
+                    <label for="hd">HD</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="qlty" value="sd" id="sd">
+                    <label for="sd">SD</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="qlty" value="cam" id="cam">
+                    <label for="cam">cam</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="qlty" value="mp4" id="mp4">
+                    <label for="mp4">MP4</label>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="fltr-cntnt-itm-cntnr">
+                <div class="rlsd-title">
+                    released
+                </div>
+                <div class="rlsd">
+                    <div class="radio-btn">
+                        <input type="radio" name="rlsd" value="rlsd-all" id="rlsd-all">
+                    <label for="rlsd-all" >all</label>                    
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="rlsd" value="2023" id="2023">
+                    <label for="2023" >2023</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="rlsd" value="2022" id="2022">
+                    <label for="2022" >2022</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="rlsd" value="2021" id="2021">
+                    <label for="2021" >2021</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="rlsd" value="2020" id="2020">
+                    <label for="2020" >2020</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="rlsd" value="2019" id="2019">
+                    <label for="2019" >2019</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="rlsd" value="older" id="older">
+                    <label for="older" >older</label>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="fltr-cntnt-itm-cntnr">
+                <div class="gnr-title">
+                    genre
+                </div>
+                <div class="gnr">
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="action" value="action">
+                        <label for="action">action</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="Adventure" value="Adventure">
+                        <label for="Adventure">Adventure</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="action-adventure" value="action-adventure">
+                        <label for="action-adventure">action & adventure</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="animation" value="animation">
+                        <label for="animation">animation</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="biography" value="biography">
+                        <label for="biography">biography</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="crime" value="crime">
+                        <label for="crime">crime</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="comedy" value="comedy">
+                        <label for="comedy">comedy</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="drama" value="drama">
+                        <label for="drama">drama</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="family" value="family">
+                        <label for="family">family</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="history" value="history">
+                        <label for="history">history</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="horror" value="horror">
+                        <label for="horror">horror</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="kids" value="kids">
+                        <label for="kids">kids</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="mystery" value="mystery">
+                        <label for="mystery">mystery</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="news" value="news">
+                        <label for="news">news</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="reality" value="reality">
+                        <label for="reality">reality</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="romantic" value="romantic">
+                        <label for="romantic">romantic</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="sci-fi" value="sci-fi">
+                        <label for="sci-fi">sci-fi & fantasy</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="science-fiction" value="science-fiction">
+                        <label for="science-fiction">science fiction</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="thriller" value="thriller">
+                        <label for="thriller">thriller</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="tV-show" value="tV-show">
+                        <label for="tV-show">tV show</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="gnr" id="war" value="war">
+                        <label for="war">war</label>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="fltr-cntnt-itm-cntnr">
+                <div class="cntry-title">
+                    country
+                </div>
+                <div class="cntry">
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="australia" value="australia">
+                        <label for="australia">australia</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="austria" value="austria">
+                        <label for="austria">austria</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="belgium" value="belgium">
+                        <label for="belgium">belgium</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="brazil" value="brazil">
+                        <label for="brazil">brazil</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="canada" value="canada">
+                        <label for="canada">canada</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="china" value="china">
+                        <label for="china">china</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="denmark" value="denmark">
+                        <label for="denmark">denmark</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="france" value="france">
+                        <label for="france">france</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="geramny" value="geramny">
+                        <label for="geramny">geramny</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="hong" value="hong">
+                        <label for="hong">hong</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="inda" value="inda">
+                        <label for="inda">inda</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="japan" value="japan">
+                        <label for="japan">japan</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="pakistan" value="pakistan">
+                        <label for="pakistan">pakistan</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="russia" value="russia">
+                        <label for="russia">russia</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="south-korea" value="south-korea">
+                        <label for="south-korea">south korea</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="south-africa" value="south-africa">
+                        <label for="south-africa">south africa</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="apain" value="apain">
+                        <label for="apain">apain</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="thailand" value="thailand">
+                        <label for="thailand">thailand</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="united" value="united-kingdon">
+                        <label for="united">united kingdom</label>
+                    </div>
+    
+                    <div class="radio-btn">
+                        <input type="radio" name="cntry" id="united-america" value="united-america">
+                        <label for="united-america">united states of America</label>
+                    </div>
+    
+                </div>
+            </div>
+
+
+
+
+            <div class="fltr-submit-close">
+                <input type="submit" value="Filter">
+                <button>
+                    Close<i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="banner">    <!-- BANNER START -->
+                <div class="movie-title">
+                    ant-man and the wasp: quantumania
+                </div>
+                <div class="movie-type">
+                    2023 ‧ Action/Adventure ‧ 2h 45m
+                </div>
+
+                <div class="movie-desc">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia quidem ipsa excepturi nostrum ipsam eum harum eligendi velit expedita optio praesentium porro vero, numquam nemo nisi libero exercitationem? Laudantium.
+                    </p>
+                </div>
+
+                <div class="movie-cast">
+                    <a href="https://www.google.com/search?q=paul+rudd&rlz=1C1GTPM_enPK1029PK1029&oq=Paul+Rudd&aqs=chrome.0.0i355i433i512j46i433i512j0i512l3j46i512j0i512l4.1249j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+                        Paul Rudd <span></span>
+                    </a>
+                    <a href="https://www.google.com/search?q=Kathryn+Newton&rlz=1C1GTPM_enPK1029PK1029&oq=ka&aqs=chrome.1.69i57j69i59j0i512j46i131i433i512j46i433i512j69i60l2j69i61.10427j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
+                        Kathryn Newton <span></span>
+                    </a>
+                    <a href="https://www.google.com/search?q=bill+murray&rlz=1C1GTPM_enPK1029PK1029&oq=bill+murray&aqs=chrome.0.0i355i433i512j46i433i512j0i512l5j46i512l2j0i512.1319j0j9&sourceid=chrome&ie=UTF-8"  target="_blank">
+                        bill murray <span></span>
+                    </a>
+                    <a href="https://www.google.com/search?q=jonathan+majors&rlz=1C1GTPM_enPK1029PK1029&oq=Jonathan+Majors&aqs=chrome.0.0i271j46i67i131i433j0i67l3j0i512l3j46i512j0i67.1834j0j7&sourceid=chrome&ie=UTF-8"  target="_blank">
+                        jonathan majors <span></span>
+                    </a>
+                    <a href="https://www.google.com/search?q=Michael+Douglas&rlz=1C1GTPM_enPK1029PK1029&oq=Michael+Douglas&aqs=chrome..69i57.2704j0j9&sourceid=chrome&ie=UTF-8"  target="_blank">
+                        Michael Douglas <span></span>
+                    </a>
+                    <a href="https://www.google.com/search?q=michelle+pfeiffer&rlz=1C1GTPM_enPK1029PK1029&oq=Michelle+Pfeiffer&aqs=chrome.0.0i355i433i512j46i433i512j0i512l6j46i512j0i512.2753j0j9&sourceid=chrome&ie=UTF-8"  target="_blank">
+                        Michelle Pfeiffer <span></span>
+                    </a>
+                    <a href="https://www.google.com/search?q=evangeline+lilly&rlz=1C1GTPM_enPK1029PK1029&oq=Evangeline+Lilly&aqs=chrome.0.0i131i355i433i512j46i131i433i512j0i512l6j46i512j0i20i263i512.802j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+                        Evangeline Lilly <span></span>
+                    </a>
+                    
+                    <a href="https://www.google.com/search?q=judy+greer&rlz=1C1GTPM_enPK1029PK1029&oq=Judy+Greer&aqs=chrome.0.0i355i512j46i512j0i512l2j46i512l2j0i512j46i512j0i512l2.1008j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+                        Judy Greer <span></span>
+                    </a>
+                </div>
+
+                <div class="banner-btn">
+                    <button>
+                        Watch trailer
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button>
+                        watch full movie
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button>
+                        add to favourite
+                        <i class="fa-solid fa-bookmark"></i>
+                    </button>
+                    <button>
+                        comment
+                        <i class="fa-solid fa-comment"></i>
+                    </button>
+                </div>
+        </div><!-- BANNER END -->
+
+        <section class="movies-sec">
+
+            <div class="new-movies-sec-header">
+                <div class="new-movies-sec-title">
+                    New Release
+                </div>
+            </div>
+
+            <!-- NEW RELEASE LIST START -->
+            <div class="new-movies-container">
+                <div class="new-movies" id="newmovies">
+                
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/a4/2f/c0/a42fc0598ac91dff6430620af07e8f76.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            guardians of the galaxy vol 3 (2023)
+                        </div>
+                    </div>          
+    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/55/d1/59/55d15963c40b54e3c60d911ad58013e3.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            the marvels (2023)
+                        </div>
+                    </div>
+    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://tickmarq.s3.amazonaws.com/CACHE/images/veezi/posters/esquireimax-ST00000806-poster-1686755082/ffb89bd8a5a8a07e50733ad2ca675ebc.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            Mission Impossible: Dead Reckoning Part-1 (2023)
+                        </div>
+                    </div>
+    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/ec/7b/ac/ec7bac07422b4554156aff16361311c6.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            adam driver 65 (2023)
+                        </div>
+                    </div>
+    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://wallpaperaccess.com/full/9140089.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+        
+                        <div class="movie-name">
+                            Fast X (2023)
+                        </div>
+                    </div>
+    
+                    <div class="movies-list-items">
+                    
+                    <div class="movies-list-item-img">
+                        <img src="https://i.pinimg.com/564x/9a/49/86/9a4986822289317086710cc38f706931.jpg" alt="">
+                        <div class="overly"></div>
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+    
+                    <div class="movie-name">
+                        the flash (2023)
+                    </div>
+                    </div>
+    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/9f/1b/e9/9f1be94bd22f707c68a4eae2ccc726ce.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="movie-name">
+                            transformer: rise of the beasts (2023)
+                        </div>
+                    </div>
+                    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/27/17/25/271725630d094bf99534399adf15bf15.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            aquaman and the lost kingdom (2023)
+                        </div>
+                    </div>
+    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/43/e4/d6/43e4d619dc44b1a2fd5b2a35cfc4fdf2.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            ghosted (2023)
+                        </div>
+                    </div>
+    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/23/d0/8d/23d08de4864318e76b8fd0042453ba43.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            we have a ghost (2023)
+                        </div>
+                    </div>
+    
+                    <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/73/c0/5a/73c05a63ac562d5302a1c2526248515e.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            Cocaine Bear (2023)
+                        </div>
+                    </div>
+                </div>  
+                
+                <div id="nextbtn" class="next-btn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div id="prevbtn" class="prev-btn">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+               
+            </div>
+
+        </section>   
+
+        <!-- SECOND SECTION START -->
+
+        <div class="banner2">    <!-- BANNER START -->
+            <div class="movie-title">
+                avengers: the age of ultron
+            </div>
+            <div class="movie-type">
+                2023 ‧ Action/Adventure ‧ 2h 45m
+            </div>
+
+            <div class="movie-desc">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia quidem ipsa excepturi nostrum ipsam eum harum eligendi velit expedita optio praesentium porro vero, numquam nemo nisi libero exercitationem? Laudantium.
+                </p>
+            </div>
+
+            <div class="movie-cast">
+                <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwNKsyyjJg9BIoyk9KLSpRSMkvz0utVMgqAgB_YQlX&q=robert+downey+jr&oq=robert+dow&aqs=chrome.1.0i131i355i433i512j46i131i433i512j0i131i433i512j69i57j46i340i512j0i512l4j46i512.71855584j0j15&sourceid=chrome&ie=UTF-8" target="_blank">
+                    Robert Downey Jr. <span></span>
+                </a>
+                <a href="https://www.google.com/search?q=chris+evans&sxsrf=AB5stBijuoQHMWGa3BF9C36TZbYHyF5uhg%3A1688266565429&ei=ReegZMLjGamokdUP3My5-A8&gs_ssp=eJzj4tTP1TcwtSg2MTFg9OJOzijKLFZILUvMKwYAUCkHMw&oq=chris+e&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMg0ILhCKBRCxAxCDARBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgoIABCKBRCxAxBDMgsIABCABBCxAxCDATIKCC4QgAQQFBCHAjILCAAQgAQQsQMQgwEyBQgAEIAEMgUIABCABDIbCC4QigUQsQMQgwEQQxCXBRDcBBDeBBDfBBgDOgoIABBHENYEELADOgoIABCKBRCwAxBDOg0IABDkAhDWBBCwAxgBOg8ILhCKBRDIAxCwAxBDGAI6EgguEIoFENQCEMgDELADEEMYAjoECCMQJzoHCCMQigUQJzoHCC4QigUQQzoNCAAQigUQsQMQgwEQQzoKCC4QigUQsQMQQ0oECEEYAFCO6ANY3fUDYKqOBGgCcAF4AIABqASIAZ8UkgEJMi0xLjUuMC4xmAEAoAEBwAEByAET2gEGCAEQARgJ2gEGCAIQARgI2gEGCAMQARgU&sclient=gws-wiz-serp" target="_blank">
+                    chris evans <span></span>
+                </a>
+                <a href="https://www.google.com/search?q=scarlett+johansson&sxsrf=AB5stBjUnXQCGeqD6MMkgxDLO35SYq8nvg%3A1688266828685&ei=TOigZLG2KYejkdUPwsKWiA0&gs_ssp=eJzj4tTP1TcwMjQ0KTFg9BIqTk4sykktKVHIys9IzCsuzs8DAI5ACi0&oq=scarlett+jo&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMg0ILhCDARCxAxCKBRBDMg0IABCKBRCxAxCDARBDMg0IABCKBRCxAxCDARBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgoIABCKBRCxAxBDMgcIABCKBRBDMgUIABCABDIbCC4QgwEQsQMQigUQQxCXBRDcBBDeBBDfBBgBOgQIABBHOg0ILhCKBRCxAxCDARBDOgsILhCABBCxAxCDAToICAAQgAQQsQNKBAhBGABQj2FYsJgBYNmtAWgAcAN4AYABkg-IAZ5MkgEHNi0zLjMuMpgBAKABAcABAcgBCNoBBggBEAEYFA&sclient=gws-wiz-serp" target="_blank">
+                    scarlett johansson <span></span>
+                </a>
+                <a href="https://www.google.com/search?q=mark+ruffalo&sxsrf=AB5stBiBV4eIXF7WkogUybC5iYYTQVP4xw%3A1688266677267&ei=teegZIP9D8a6kdUPn9KhoAM&gs_ssp=eJzj4tTP1TcwNi3KqzJg9OLJTSzKVigqTUtLzMkHAF_rCBI&oq=mark+ruf&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMg0ILhCKBRCxAxCDARBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgUIABCABDIFCAAQgAQyBQgAEIAEMhsILhCKBRCxAxCDARBDEJcFENwEEN4EEN8EGAM6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6DwguEIoFEMgDELADEEMYAjoECCMQJzoHCCMQigUQJzoHCC4QigUQQzoNCC4QigUQxwEQ0QMQQzoWCC4QigUQsQMQgwEQxwEQ0QMQ1AIQQzoKCC4QigUQsQMQQzoKCAAQigUQsQMQQzoICC4QgAQQsQM6CwguEIAEELEDEIMBOgUILhCABEoECEEYAFC9M1iPQmDbSWgGcAF4AIABkwOIAfcUkgEHMi0zLjQuMZgBAKABAcABAcgBE9oBBggBEAEYCdoBBggCEAEYCNoBBggDEAEYFA&sclient=gws-wiz-serp"  target="_blank"> 
+                    mark ruffalo <span></span>
+                </a>
+                <a href="https://www.google.com/search?q=jeremy+renner&sxsrf=AB5stBgy5CJFT8qBkCjSAoMBx2PgI7oqmw%3A1688266524189&ei=HOegZKGdC_q7kdUPn4i52A0&gs_ssp=eJzj4tTP1TdIyik0qDJg9OLNSi1Kza1UKErNy0stAgBtLAi2&oq=jeremy&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgoILhCKBRCxAxBDMgoILhCKBRCxAxBDMgcIABCKBRBDMgcILhCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcILhCKBRBDMgcIABCKBRBDMhgILhCKBRCxAxBDEJcFENwEEN4EEN8EGAM6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6DwguEIoFEMgDELADEEMYAjoECCMQJzoNCC4QigUQsQMQgwEQQ0oECEEYAFDNFVikIWC3SGgBcAF4AIABgxSIAfY4kgEHNi0zLjktMpgBAKABAcABAcgBEdoBBggBEAEYCdoBBggCEAEYCNoBBggDEAEYFA&sclient=gws-wiz-serp"  target="_blank">
+                    jeremy renner   <span></span>
+                </a>
+                <a href="https://www.google.com/search?q=chris+hemsworth&sxsrf=AB5stBhSYlISt6irVkVqgsQWVpkDhdTDRw%3A1688266641790&ei=keegZO3qL-CkkdUPv5CoyAI&gs_ssp=eJzj4tTP1TcwycorzDJg9OJPzijKLFbISM0tLs8vKskAAH7hCZo&oq=chris+ham&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMg0ILhCABBCxAxCDARAKMg0IABCABBCxAxCDARAKMgsIABCKBRCxAxCDATINCAAQgAQQsQMQgwEQCjINCAAQgAQQsQMQgwEQCjINCAAQgAQQsQMQgwEQCjIHCAAQgAQQCjINCAAQgAQQsQMQgwEQCjIHCAAQgAQQCjIHCAAQgAQQCjIbCC4QgAQQsQMQgwEQChCXBRDcBBDeBBDfBBgDOgoIABBHENYEELADOgoIABCKBRCwAxBDOg0IABDkAhDWBBCwAxgBOg8ILhCKBRDIAxCwAxBDGAI6BwguEIoFECc6BwgAEIoFEEM6DQgAEIoFELEDEIMBEEM6CggAEIoFELEDEEM6CwguEIAEELEDEIMBOggILhCABBCxAzoTCC4QigUQlwUQ3AQQ3gQQ3wQYAzoOCC4QigUQsQMQgwEQkQI6DggAEIoFELEDEIMBEJECOgsIABCABBCxAxCDAToFCAAQgAQ6HAguEIoFELEDEIMBEJECEJcFENwEEN4EEN8EGAM6BQguEIAEOhMILhCABBCXBRDcBBDeBBDfBBgDSgQIQRgAUJUWWOI2YOdGaAJwAXgBgAGxDIgB6TWSAQ8yLTEuMC4zLjEuMi4xLjGYAQCgAQHAAQHIARDaAQYIARABGAnaAQYIAhABGAjaAQYIAxABGBQ&sclient=gws-wiz-serp"  target="_blank">
+                    chris hemsworth <span></span>
+                </a>
+                <a href="https://www.google.com/search?q=+Elizabeth+Olsen&sxsrf=AB5stBgfdrfTSob2O9In_YYn-bun_TRsIg%3A1688266858810&ei=auigZMKIMYShkdUPg5GX4As&ved=0ahUKEwjC5Z6ThO__AhWEUKQEHYPIBbwQ4dUDCA8&uact=5&oq=+Elizabeth+Olsen&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzINCC4QigUQsQMQgwEQQzIHCAAQigUQQzIHCAAQigUQQzINCAAQigUQsQMQgwEQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIKCAAQgAQQFBCHAjILCAAQgAQQsQMQgwEyGwguEIoFELEDEIMBEEMQlwUQ3AQQ3gQQ3wQYAUoECEEYAFAAWABgzxVoAHABeACAAZECiAGRApIBAzItMZgBAKABAqABAcABAdoBBggBEAEYFA&sclient=gws-wiz-serp"  target="_blank">
+                    Elizabeth Olsen <span></span>
+                </a>
+                <a href="https://www.google.com/search?q=paul+bettany&sxsrf=AB5stBjfQU49ZTx7IiAwuw6phB49S3I0SQ%3A1688266948190&ei=xOigZLekC_CbkdUP58acqA8&gs_ssp=eJzj4tTP1TcwTM5INjdg9OIpSCzNUUhKLSlJzKsEAF1pB_U&oq=Paul+Bettany&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMg0ILhCDARCxAxCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIbCC4QgwEQsQMQigUQQxCXBRDcBBDeBBDfBBgBSgQIQRgAUABYAGD-FGgAcAF4AIABqASIAagEkgEDNS0xmAEAoAECoAEBwAEB2gEGCAEQARgU&sclient=gws-wiz-serp" target="_blank">
+                    Paul Bettany <span></span>
+                </a>
+                
+                <a href="https://www.google.com/search?q=Samuel+L.+Jackson&sxsrf=AB5stBg_nwHoWFV6H0B8dZzXMt08UE_1mA%3A1688267026516&ei=EumgZJqfH5qvkdUPq_KY6A0&ved=0ahUKEwia8JrjhO__AhWaV6QEHSs5Bt0Q4dUDCA8&uact=5&oq=Samuel+L.+Jackson&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCC4QgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyEwguEIAEEJcFENwEEN4EEN8EGAFKBAhBGABQAFgAYP4LaABwAXgAgAGnAogBpwKSAQMyLTGYAQCgAQKgAQHAAQHaAQYIARABGBQ&sclient=gws-wiz-serp" target="_blank">
+                    Samuel L. Jackson <span></span>
+                </a>
+            </div>            
+
+            <div class="banner-btn">
+                <button>
+                    Watch trailer
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button>
+                    watch full movie
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button>
+                    add to favourite
+                    <i class="fa-solid fa-bookmark"></i>
+                </button>
+                <button>
+                    comment
+                    <i class="fa-solid fa-comment"></i>
+                </button>
+            </div>
+        </div><!-- BANNER END -->
+
+        <section class="movies-sec">
+                <div class="new-movies-sec-header">
+                    <div class="new-movies-sec-title">
+                        popular movies
+                    </div>
+                </div>
+                <!-- NEW RELEASE LIST START -->
+                <div class="new-movies-container">
+                    <div class="new-movies" id="newmovies3">
+                    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/7a/ea/a5/7aeaa5efe90c25bf68adf1fc29c73892.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                Avengers: Endgame (2019)
+                            </div>
+                        </div>          
+
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/d7/41/f1/d741f10bbc1d71b53745c98e9791f13d.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                captain marvel (2019)
+                            </div>
+                        </div>
+
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/c4/78/5d/c4785dd26c5ebb05e1a43a66c254acdc.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                Captain America: The First Avenger (2011)
+                            </div>
+                        </div>
+
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/4c/29/d6/4c29d6753e61511d6369567214af2f53.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                interstellar (2014)
+                            </div>
+                        </div>
+
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/a5/96/d4/a596d4c4bb89dbd647b5506bdbc6be41.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                top gun maverick (2022)
+                            </div>
+                        </div>
+
+                        <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/6a/ca/58/6aca58c43f149d1016587ad7fbedc621.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+
+                        <div class="movie-name">
+                            dune (2021)
+                        </div>
+                        </div>
+
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/40/fa/89/40fa891fd79cef74105dbc635c7fd181.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="movie-name">
+                                Spider-Man: No Way Home (2021)
+                            </div>
+                        </div>
+                        
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/e1/4b/0b/e14b0b20f95022ac0bec6ed35733ca94.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                The mother (2023)
+                            </div>
+                        </div>
+
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/47/15/11/471511c9359233e71e707b00c6dfaa7c.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                extraction 2 (2023)
+                            </div>
+                        </div>
+
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/c1/87/75/c18775a46d258b76ee9cd81d82c11aac.jpg   " alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                Knock Knock (2015)
+                            </div>
+                        </div>
+
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/21/a7/58/21a758c26d2e395556ae48d817e45375.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <div class="movie-name">
+                                john vick (2017)
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div id="nextbtn3" class="next-btn">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div id="prevbtn3" class="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                </div>          
+                
+                <div class="new-movies-container">
+                    <div class="new-movies" id="newmovies2">
+                    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/5f/47/98/5f4798681f6fa2d14792dacff18b3b6e.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                Thor: The Dark World (2013)
+                            </div>
+                        </div>          
+    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/d8/25/02/d82502d5bb8d4583d78e54e5b9694ef0.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                The Meg (2018)
+                            </div>
+                        </div>
+    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/d1/1d/59/d11d59d643b2d31ce6aeff60dcab1d7b.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                The Wolverine (2013)
+                            </div>
+                        </div>
+    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/e8/bc/f9/e8bcf9f66c811c7ac7c1a30177757890.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                Mission: Impossible - Fallout (2018)
+                            </div>
+                        </div>
+    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/96/7c/2f/967c2f32c54e46a7d5324a736950b148.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                The Father (2020)
+                            </div>
+                        </div>
+    
+                        <div class="movies-list-items">
+                        
+                        <div class="movies-list-item-img">
+                            <img src="https://i.pinimg.com/564x/9a/5a/07/9a5a074d15825ba89f93cdfe2bc87de4.jpg" alt="">
+                            <div class="overly"></div>
+                            <div class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+    
+                        <div class="movie-name">
+                            Joker (2019)
+                        </div>
+                        </div>
+    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/33/56/d1/3356d1a65f47e7ba79e1c6648cceb06c.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="movie-name">
+                                Forrest Gump (1994)
+                            </div>
+                        </div>
+                        
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/cb/58/47/cb584713fd542b2c0bf473f066da12a1.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                Catch Me If You Can (2002)
+                            </div>
+                        </div>
+    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/8d/37/3e/8d373e5364d78d2a824c6281f6aaf77e.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                Money Heist chapter 3 (2019)
+                            </div>
+                        </div>
+    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/ce/39/50/ce395081a8e65bcabac074b08037cabf.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                Avatar (2009)
+                            </div>
+                        </div>
+    
+                        <div class="movies-list-items">
+                            
+                            <div class="movies-list-item-img">
+                                <img src="https://i.pinimg.com/564x/b7/01/87/b7018759b06d700948d8b46a255021cc.jpg" alt="">
+                                <div class="overly"></div>
+                                <div class="play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+    
+                            <div class="movie-name">
+                                Iron Man  (2008)
+                            </div>
+                        </div>
+                    </div>  
+    
+                    <div id="nextbtn2" class="next-btn">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div id="prevbtn2" class="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                </div>
+
+                <!-- <div class="show-more-btn">
+                    <button>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                </div> -->
+        </section>
+
+        <div class="next-pg-btn">
+            <button>
+                1
+            </button>
+            <button>
+                2
+            </button>
+            <button>
+                3
+            </button>
+            <button>
+                4
+            </button>
+            <button>
+                5
+            </button>
+            <button>
+                6
+            </button>
+            <button>
+                7
+            </button>
+            <button>
+                8
+            </button>
+            <button>
+                9
+            </button>
+            <button>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <!-- FOOTER WITH SOCIAL LINKS -->
+
+        <div class="footer">
+            <div class="ftr-col-1">
+                <div class="about">
+                    <div class="logo">
+                        fmovies
+                    </div>
+                    <p>
+                        FMovies is top of free streaming website, where to watch movies online free without registration required. With a big database and great features, we're confident FMovies is the best free movies online website in the space that you can't simply miss!
+                    </p>
+                </div>
+            </div>
+            <div class="ftr-col-2">
+                <a href="#">home</a>
+                <a href="#">genre</a>
+                <a href="#">latest</a>
+                <a href="#">series</a>
+                <a href="#">comics</a>
+            </div>
+            <div class="ftr-col-3">
+                <a href="#">movies</a>
+                <a href="#">tv shows</a>
+                <a href="#">Top IMDB</a>
+            </div>
+            <div class="ftr-col-4">
+                <a href="#">feedback</a>
+                <a href="#">terms of services</a>
+                <a href="#">android app</a>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f" title="Facebook"></i></a>    
+            <a href="#"><i class="fa-brands fa-twitter" title="Twitter"></i></a>    
+            <a href="#"><i class="fa-brands fa-instagram" title="Instagram"></i></a>    
+            <a href="#"><i class="fa-brands fa-pinterest" title="Pinterest"></i></a>    
+            <a href="#"><i class="fa-brands fa-tiktok" title="Tiktok"></i></a>       
+        </div>
+
+        <div class="copyright">
+            Copyright &#169; 2023, All Rights Reserved
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
